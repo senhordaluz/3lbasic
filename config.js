@@ -11,7 +11,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // When running Ghost in the wild, use the production environment
         // Configure your URL and mail settings here
         production: {
-            url: 'http://'+process.env.OPENSHIFT_APP_DNS, 'http://offpedal.com.br'+process.env.OPENSHIFT_APP_DNS, 'http://www.offpedal.com.br'+process.env.OPENSHIFT_APP_DNS,
+            url: 'http://'+process.env.OPENSHIFT_APP_DNS,
             mail: {},
             database: {
                 client: 'mysql',
@@ -41,7 +41,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // When running Ghost in the wild, use the production environment
         // Configure your URL and mail settings here
         production: {
-            url: 'http://'+process.env.OPENSHIFT_APP_DNS, 'http://offpedal.com.br'+process.env.OPENSHIFT_APP_DNS, 'http://www.offpedal.com.br'+process.env.OPENSHIFT_APP_DNS,
+            url: 'http://'+process.env.OPENSHIFT_APP_DNS,
             mail: {},
             database: {
                 client: 'pg',
@@ -109,7 +109,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // When running Ghost in the wild, use the production environment
         // Configure your URL and mail settings here
         production: {
-            url: 'http://'+process.env.OPENSHIFT_APP_DNS, 'http://offpedal.com.br'+process.env.OPENSHIFT_APP_DNS, 'http://www.offpedal.com.br'+process.env.OPENSHIFT_APP_DNS,
+            url: 'http://'+process.env.OPENSHIFT_APP_DNS,
             mail: {},
             database: {
                 client: 'sqlite3',
