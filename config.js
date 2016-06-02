@@ -10,19 +10,20 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // ### Production
         // When running Ghost in the wild, use the production environment
         // Configure your URL and mail settings here
+        // The OPENSHIFT_APP_DNS_ALIAS must be set on OpenShift
         production: {
             url: 'http://'+process.env.OPENSHIFT_APP_DNS_ALIAS,
             mail: {
-            	fromaddress: 'contato@terceiralei.com.br',
-            	service: 'Zoho',
+            	fromaddress: 'email@domain.com',
+            	service: 'Email Server',
             	transport: 'SMTP',
             	options: {
-					host: 'smtp.zoho.com',
+					host: 'smtp.mail.com',
                 	port: 465,
                 	secureConnection: true,
 					auth: {
-						user: 'contato@terceiralei.com.br',
-						pass: 'dnil10e3'
+						user: 'email@domain.com',
+						pass: 'password'
 					}
 				}
             },
@@ -83,7 +84,7 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // ### Development **(default)**
         development: {
             // The url to use when providing links to the site, E.g. in RSS and email.
-            url: 'http://offpedal.com.br',
+            url: 'http://'+process.env.OPENSHIFT_APP_DNS,
 
             // Example mail config
             // Visit http://support.ghost.org/mail for instructions
