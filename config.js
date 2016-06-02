@@ -11,6 +11,8 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // When running Ghost in the wild, use the production environment
         // Configure your URL and mail settings here
         // The OPENSHIFT_APP_DNS_ALIAS must be set on OpenShift
+        // How to do it by this link https://www.insidersbyte.com/use-a-custom-domain-for-your-openshift-ghost-blog/
+        // To add use this command rhc set-env OPENSHIFT_APP_DNS_ALIAS=www.yourdomain.com -a yourAppName
         production: {
             url: 'http://'+process.env.OPENSHIFT_APP_DNS_ALIAS,
             mail: {
