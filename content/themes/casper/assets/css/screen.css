@@ -2118,6 +2118,16 @@ body:not(.post-template) .post-title {
     }
 }
 
+.post-content h2 {
+	margin-bottom: 0.75em;
+}
+
+figure {
+	margin: 0 0 2.5rem 0;
+	font-style: italic;
+	font-size: 0.85em;
+	text-align: center;
+}
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff

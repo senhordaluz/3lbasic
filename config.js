@@ -11,8 +11,21 @@ if (process.env.OPENSHIFT_MYSQL_DB_HOST != undefined) {
         // When running Ghost in the wild, use the production environment
         // Configure your URL and mail settings here
         production: {
-            url: 'http://'+process.env.OPENSHIFT_APP_DNS,
-            mail: {},
+            url: 'http://'+process.env.OPENSHIFT_APP_DNS_ALIAS,
+            mail: {
+            	fromaddress: 'contato@terceiralei.com.br',
+            	service: 'Zoho',
+            	transport: 'SMTP',
+            	options: {
+					host: 'smtp.zoho.com',
+                	port: 465,
+                	secureConnection: true,
+					auth: {
+						user: 'contato@terceiralei.com.br',
+						pass: 'dnil10e3'
+					}
+				}
+            },
             database: {
                 client: 'mysql',
                 connection: {

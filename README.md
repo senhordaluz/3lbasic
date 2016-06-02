@@ -1,4 +1,6 @@
-# Ghost for OpenShift
+# Custom version of Ghost for OpenShift
+
+This is a custom version of the Ghost from OpenShift.
 
 Ghost is a free, open, simple blogging platform that is available to anyone who wants to use it. 
 
